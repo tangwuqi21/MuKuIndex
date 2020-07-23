@@ -114,13 +114,13 @@ export default {
   data() {
     return {
       company: {},
-      imgs: [
-        { url: require("../assets/img/1.jpg") },
+      // imgs: [
+      //   { url: require("../assets/img/1.jpg") },
 
-        { url: require("../assets/img/2.jpg") },
+      //   { url: require("../assets/img/2.jpg") },
 
-        { url: require("../assets/img/3.jpg") },
-      ],
+      //   { url: require("../assets/img/3.jpg") },
+      // ],
       descs: [
         {
           imgs: 'https://dss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2789753920,68186140&fm=55&app=54&f=JPEG?w=1140&h=640',
