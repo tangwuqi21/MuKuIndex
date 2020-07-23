@@ -7,7 +7,7 @@
         </div>
         <div style="margin-left:154px; margin-right:154px">
           <div>
-            <a href="#" style="text-decoration: none; color: #000000;">首页</a> &gt; 公司介绍
+            <a href="index.vue" style="text-decoration: none; color: #000000;">首页</a> &gt; 公司介绍
           </div>
           <div align="center" style="margin:20px;font-size:22px">上海幕库科技发展有限公司</div>
           <p
