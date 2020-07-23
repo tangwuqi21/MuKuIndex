@@ -1,23 +1,6 @@
 <template>
-  <el-container>
-    <el-header>
-      <div id="logDiv">
-        <div id="picture_div">
-          <img src="../assets/mukuLogo.png" alt />
-        </div>
-        <span>上海幕库科技发展有限公司</span>
-      </div>
-      <div id="selectList">
-        <div><router-link to = "/">首页</router-link></div>
-        <div><router-link to = "/about">公司介绍</router-link></div>
-        <div><router-link to = "/about">成功案例</router-link></div>
-        <div><router-link to = "/about">加入我们</router-link></div>
-      </div>
-    </el-header>
-    <el-main>
-      <router-view>
-      </router-view>
-      <!-- <div id="bigPicture">
+      <el-main>
+      <div id="bigPicture">
         <div id="pictureWord">
           <p>
             <span style="color: rgb(255, 255, 255);">通过大数据、人工智能、云计算等技术的应用和创新，助力国家港航信息化事业转型发展。</span>
@@ -82,38 +65,8 @@
             </ul>
           </div>
         </div>
-      </div> -->
-    </el-main>
-    <el-footer>
-      <div id="footer_message">
-        <div id="footer_logo">
-          <ul>
-            <li>
-              <div class="miniLogo"><i class="el-icon-map-location"></i></div>
-              <div class="mimiMessage">上海市浦东新区峨山路77号金牛大厦北楼205室</div>
-            </li>
-            <li>
-              <div class="miniLogo"><i class="el-icon-message"></i></div>
-              <div class="mimiMessage">admin@miluoinfo.com</div>
-            </li>
-          </ul>
-        </div>
-        <div id="footer_officeMessage">
-            <div id="footer_officeMessage_police">
-              <img src="../assets/police.png">
-              <span>沪ICP备18034309号</span>
-            </div>
-            <div>
-              <span>版权所有 © </span>
-              <span>上海幕库科技发展有限公司</span>
-            </div>
-        </div>
       </div>
-    </el-footer>
-    <div style="width:100%;height:20px;color: rgb(152, 152, 152);text-align: center;font-size: 12px;">
-      沪ICP备18034309号
-    </div>
-  </el-container>
+    </el-main>
 </template>
 
 <script>
@@ -319,9 +272,5 @@
 }
 #footer_officeMessage div{
   margin: 10px 10px;
-}
-#selectList div a{
-  text-decoration: none;
-  color: #383838;
 }
 </style>
