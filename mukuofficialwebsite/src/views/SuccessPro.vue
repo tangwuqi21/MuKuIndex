@@ -57,7 +57,7 @@
     </el-container>
   </div>
 </template>
-<style lang="less" scoped>
+<style scoped>
 .content {
   text-indent: 2em;
   margin: 0px;
@@ -106,7 +106,7 @@
   background-color: gray;
   display: inline-block;
   margin-right: 10px;
-  // background-image: url("https://dss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2789753920,68186140&fm=55&app=54&f=JPEG?w=1140&h=640");
+  /* // background-image: url("https://dss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2789753920,68186140&fm=55&app=54&f=JPEG?w=1140&h=640"); */
 }
 </style>
 <script>

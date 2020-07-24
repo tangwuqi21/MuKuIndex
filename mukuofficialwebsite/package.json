@@ -11,6 +11,7 @@
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "element-ui": "^2.4.5",
+    "postcss-less-loader": "0.1.0-alpha.2",
     "v-viewer": "^1.5.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"
