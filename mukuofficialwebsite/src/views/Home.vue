@@ -3,7 +3,7 @@
     <el-header>
       <div id="logDiv">
         <div id="picture_div">
-          <img src="../assets/mukuLogo.png" alt />
+          <img src="../assets/mukuLogo1.png" alt />
         </div>
         <span>上海幕库科技发展有限公司</span>
       </div>
@@ -90,7 +90,7 @@
           <ul>
             <li>
               <div class="miniLogo"><i class="el-icon-map-location"></i></div>
-              <div class="mimiMessage">上海市浦东新区峨山路77号金牛大厦北楼205室</div>
+              <div class="mimiMessage">上海市浦东新区临港新片区港城广场一街坊7号楼401</div>
             </li>
             <li>
               <div class="miniLogo"><i class="el-icon-message"></i></div>
@@ -166,7 +166,7 @@
   padding: 0px;
 }
 #bigPicture {
-  background-image: url("../assets/bigPicture.jpg");
+  background-image: url("../assets/bigPicture1.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-color: rgb(255, 255, 255);
@@ -197,7 +197,7 @@
   display: inline-flex;
 }
 #aboutUs_left {
-  background-image: url("../assets/aboutUsPicture.jpg");
+  background-image: url("../assets/aboutUsPicture1.jpg");
   width: 25%;
   height: 500px;
   background-position: 50% 50%;
