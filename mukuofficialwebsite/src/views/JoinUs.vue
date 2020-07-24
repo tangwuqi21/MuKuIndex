@@ -1,5 +1,7 @@
 <template>
 <div>
+<el-container>
+<el-main>
     <div id="picture_timg">
         <img src="../assets/timg.jpg"/>
     </div>
@@ -37,6 +39,8 @@
         <input type="text" placeholder="联系邮箱" id="con_Email" name="Email" autocomplete="off">
       </div>
     </div>
+</el-main>
+</el-container>
 </div>
 </template>
 
