@@ -15,6 +15,10 @@ const routes = [
   {
     path: '/successPro',
     component: () => import('../views/SuccessPro.vue')
+  },
+  {
+    path: '/joinUs',
+    component: () => import('../views/JoinUs.vue')
   }
 ]
 

@@ -11,7 +11,7 @@
         <div><router-link to = "/">首页</router-link></div>
         <div><router-link to = "/about">公司介绍</router-link></div>
         <div><router-link to = "/successPro">成功案例</router-link></div>
-        <div><router-link to = "/successPro">加入我们</router-link></div>
+        <div><router-link to = "/joinUs">加入我们</router-link></div>
       </div>
     </el-header>
     <el-main>
