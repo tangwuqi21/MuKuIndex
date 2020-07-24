@@ -3,11 +3,11 @@
 <el-container>
 <el-main>
     <div id="picture_timg">
-        <img src="../assets/timg.jpg"/>
+        <img src="../assets/HZ.jpg"/>
     </div>
     <div id="index">
       <router-link to = "/">首页</router-link>
-      <span> > </span>
+      <span>  >  </span>
       <span>加入我们</span>
     </div>
     <div id="office_list">
@@ -64,7 +64,7 @@
   height: 300px !important;
 }
 
-router-link{
+.router-link-active{
 text-decoration:none;
 color:#333;
 margin-left: 50px;
