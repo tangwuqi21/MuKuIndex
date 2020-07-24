@@ -94,7 +94,7 @@
             </li>
             <li>
               <div class="miniLogo"><i class="el-icon-message"></i></div>
-              <div class="mimiMessage">admin@miluoinfo.com</div>
+              <div class="mimiMessage">admin@mukulogic.com</div>
             </li>
           </ul>
         </div>
