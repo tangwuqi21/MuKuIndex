@@ -101,7 +101,7 @@
         <div id="footer_officeMessage">
             <div id="footer_officeMessage_police">
               <img src="../assets/police.png">
-              <span>沪ICP备18034309号</span>
+              <span>沪ICP备20072520号</span>
             </div>
             <div>
               <span>版权所有 © </span>
