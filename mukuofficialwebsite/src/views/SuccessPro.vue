@@ -103,6 +103,7 @@ export default {
   methods: {
     // 方式1
     sendPost() {
+      var that = this
       this.$http
         .post("/websiteservice/sysCasus/searchSysCasusListPage",
           {}
@@ -114,8 +115,8 @@ export default {
           }
         })
         .catch(function (error) {
-          console.log(error);
-        });
+          console.log(error)
+        })
     },
   },
   mounted() {
