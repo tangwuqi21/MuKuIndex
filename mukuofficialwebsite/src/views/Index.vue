@@ -127,7 +127,7 @@ export default {
       var that = this
       this.$http
         .post(
-          'http://119.23.71.198:30002/websiteservice/sysJob/searchSysJobListPage?currentPage=1&pageSize=10',
+          '/websiteservice/sysJob/searchSysJobListPage?currentPage=1&pageSize=10',
           {}
         )
         .then(function (response) {
