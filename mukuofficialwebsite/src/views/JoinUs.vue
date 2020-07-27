@@ -12,37 +12,60 @@
     </div>
     <div id="office_list">
       <ul>
-        <li>
-          <div>前端开发工程师</div>
-          <span>2020年7月23日</span>
-        </li>
-        <li>
-          <div>java开发工程师</div>
-          <span>2020年7月23日</span>
-        </li>
-        <li>
-          <div>测试运维工程师</div>
-          <span>2020年7月23日</span>
-        </li>
-        <li>
-          <div>大数据开发工程师</div>
-          <span>2020年7月23日</span>
+        <li v-for="job in jobs" :key="job.id">
+          <div>{{job.name}}</div>
+          <span>{{job.publishDate}}</span>
         </li>
       </ul>
-      <div>
-        <input type="text" placeholder="留言标题" id="con_Subject" name="Subject" autocomplete="off">
-      </div>
-      <div style="height: 0px;">
-        <textarea placeholder="留言内容" id="con_Message" name="Message" autocomplete="off"></textarea>
-      </div>
-      <div>
-        <input type="text" placeholder="联系邮箱" id="con_Email" name="Email" autocomplete="off">
-      </div>
+    </div>
+    <div>
+      <from action="">
+        <input type="text" placeholder="留言标题" id="con_Subject" name="Subject" autocomplete="off" v-model="formMess.subject">
+        <textarea placeholder="留言内容" id="con_Msg" name="Msg" autocomplete="off" v-model="formMess.msg"></textarea>
+        <input type="text" placeholder="联系邮箱" id="con_Email" name="Email" autocomplete="off" v-model="formMess.email">
+      </from>
+      <button type="submit" v-on:click="submit">提交</button>
     </div>
 </el-main>
 </el-container>
 </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      jobs: [
+      ]
+    }
+  },
+  created() {
+    this.sendPost()
+  },
+  methods: {
+    // 方式1
+    sendPost() {
+      var that = this
+      this.$http
+        .post(
+          '/websiteservice/sysJob/searchSysJobListPage?currentPage=1&pageSize=10',
+          {}
+        )
+        .then(function (response) {
+          console.log(response)
+          if (response.data.data) {
+            debugger
+            that.jobs = response.data.data.records
+            // Vue.set(this.jobs,response.data.data)
+          }
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
+  },
+}
+</script>
 
 <style scoped>
 #con_Subject{
@@ -52,9 +75,9 @@
 #con_Email{
   width: 100% !important;
   height: 30px !important;
-  margin-top: 115px;
+  margin-top: 5px;
 }
-#con_Message{
+#con_Msg{
   width: 100% !important;
   height: 90px !important;
   margin-top: 10px;
