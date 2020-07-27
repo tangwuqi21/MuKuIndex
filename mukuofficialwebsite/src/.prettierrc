@@ -1,4 +1,6 @@
 {
+  "semi": false,
+  "singleQuote": true,
   "no-alert": 0,
   "no-array-constructor": 2,
   "no-bitwise": 0,
@@ -153,7 +155,6 @@
   "radix": 2,
   "id-match": 0,
   "require-yield": 0,
-  "semi": [2, "always"],
   "semi-spacing": [0, {"before": false, "after": true}],
   "sort-vars": 0,
   "space-after-keywords": [0, "always"],

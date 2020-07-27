@@ -54,7 +54,7 @@
           <ul>
             <li v-for="job in jobs" :key="job.id">
               <div>{{job.name}}</div>
-              <span>{{job.department}}</span>
+              <span>{{job.publishDate}}</span>
             </li>
             <!-- <li>
               <div>java开发工程师</div>
@@ -127,14 +127,14 @@ export default {
       var that = this
       this.$http
         .post(
-          'http://119.23.71.198:30002/websiteservice/sysJob/searchSysJobListPage',
+          'http://119.23.71.198:30002/websiteservice/sysJob/searchSysJobListPage?currentPage=1&pageSize=10',
           {}
         )
         .then(function (response) {
           console.log(response)
           if (response.data.data) {
             debugger
-            that.jobs = response.data.data
+            that.jobs = response.data.data.records
             // Vue.set(this.jobs,response.data.data)
           }
         })

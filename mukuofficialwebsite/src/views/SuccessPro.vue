@@ -98,60 +98,61 @@ export default {
       company: {},
       descs: [
         {
-          picture: require("../assets/img/1.jpg"),
-          name: "保险行业解决方案",
-          node: "公司保险行业团队拥有从咨询、解决方案、系统开发与运...",
+          picture: require('../assets/img/1.jpg'),
+          name: '保险行业解决方案',
+          node: '公司保险行业团队拥有从咨询、解决方案、系统开发与运...',
         },
         {
-          picture: require("../assets/img/2.jpg"),
-          name: "新零售解决方案",
-          node: "行业累积，数据挖掘，探索商业本源价值",
+          picture: require('../assets/img/2.jpg'),
+          name: '新零售解决方案',
+          node: '行业累积，数据挖掘，探索商业本源价值',
         },
         {
-          picture: require("../assets/img/3.jpg"),
-          name: "商业地产解决方案",
-          node: "实现基于大数据的商业地产运营和营销创新",
+          picture: require('../assets/img/3.jpg'),
+          name: '商业地产解决方案',
+          node: '实现基于大数据的商业地产运营和营销创新',
         },
         {
-          picture: require("../assets/img/4.jpg"),
-          name: "大数据服务解决方案",
-          node: "全方位企业级大数据解决方案，慕库科技助力企业数字信息...",
+          picture: require('../assets/img/4.jpg'),
+          name: '大数据服务解决方案',
+          node: '全方位企业级大数据解决方案，慕库科技助力企业数字信息...',
         },
         {
-          picture: require("../assets/img/5.jpg"),
-          name: "大数据运维解决方案",
-          node: "挖掘运维大数据，提升服务源动力",
+          picture: require('../assets/img/5.jpg'),
+          name: '大数据运维解决方案',
+          node: '挖掘运维大数据，提升服务源动力',
         },
         {
-          picture: require("../assets/img/pro-01.jpg"),
-          name: "集装箱码头系统智能化升级改造",
+          picture: require('../assets/img/pro-01.jpg'),
+          name: '集装箱码头系统智能化升级改造',
           node:
-            "为码头生产决策提供完备的数据统计和信息分析，从而实现了岸边装卸系统、水平运输系统和堆场装卸系统无人化操作",
+            '为码头生产决策提供完备的数据统计和信息分析，从而实现了岸边装卸系统、水平运输系统和堆场装卸系统无人化操作',
         },
       ],
-    };
+    }
   },
   created() {
-   // this.sendPost();
+    // this.sendPost();
   },
   methods: {
     // 方式1
     sendPost() {
+      var that = this
       this.$http
         .post(
-          "http://119.23.71.198:30002/websiteservice/sysCasus/searchSysCasusListPage",
+          'http://119.23.71.198:30002/websiteservice/sysCasus/searchSysCasusListPage',
           {}
         )
         .then(function (response) {
-          console.log(response);
+          console.log(response)
           if (response.data.data) {
-            descs = response.data.data;
+            that.descs = response.data.data
           }
         })
         .catch(function (error) {
-          console.log(error);
-        });
+          console.log(error)
+        })
     },
   },
-};
+}
 </script>
